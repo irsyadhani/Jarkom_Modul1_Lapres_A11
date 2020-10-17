@@ -35,6 +35,7 @@ http.host == "testing.mekanis.me"
 ![alt text](/gambar/soal1.1.png)
 
 ● Klik kanan lalu follow tcp stream. Web server yang digunakan adalah nginx
+
 ![alt text](/gambar/soal1.1.png)
 #
 #### Soal 2:
@@ -47,9 +48,11 @@ http contains Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg
 ![alt text](/gambar/soal2.1.png)
 
 ● Kemudian export object dan save untuk menyimpan gambar
+
 ![alt text](/gambar/soal2.2.png)
 
 ● Gambar yang tersimpan
+
 ![alt text](/gambar/soal2.3.png)
 #
 #### Soal 3:
@@ -61,6 +64,7 @@ _**Penyelesaian:**_
 http.host == "ppid.dpr.go.id" && http.request.method == POST && http contains login
 ```
 ● Dari display filter tersebut didapatkan username : 10pemuda dan password : guncangdunia
+
 ![alt text](/gambar/soal3.png)
 #
 #### Soal 4:
@@ -70,8 +74,10 @@ _**Penyelesaian:**_
 ```
 http.authbasic
 ```
-Ada 5 paket yang menggunakan basic authentication
+● Ada 5 paket yang menggunakan basic authentication
+
 ![alt text](/gambar/soal4.1.png)
+
 ![alt text](/gambar/soal4.2.png)
 
 ● Webserver yang menggunakan basic authentication adalah testing.mekanis.me dan aku.pengen.pw
@@ -90,6 +96,7 @@ http.host contains "aku.pengen.pw"
 ● aku.pengen.pw (user: kakagamtenk pass: hartatahtabermuda)
 
 ![alt text](/gambar/soal5.2.png)
+
 ![alt text](/gambar/soal5.3.png)
 #
 #### Soal 6:
@@ -98,6 +105,7 @@ Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Bu
 _**Penyelesaian:**_
 
 ● Open File -> Display `filter:ftp-data` -> find -> answer.zip -> Save as RAW -> find -> zipkey.txt -> (hey997400323051)
+
 ![alt text](/gambar/soal6.png)
 #
 #### Soal 7:
@@ -116,15 +124,18 @@ Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP
 _**Penyelesaian:**_
 
 ● Pertama, display filter `ftp contains “Microsoft”` untuk mendapatkan IP Microsoft FTP Service. IP nya adalah 198.246.117.106
+
 ![alt text](/gambar/soal8.1.png)
 
 ● Kemudian, display filter `ftp.request.command == RETR && ip.dst == 198.246.117.106`
 
 ![alt text](/gambar/soal8.2.png)
+
 ● Klik kanan -> Follow -> TCP Stream.
 
 ![alt text](/gambar/soal8.2.png)
-objek yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service adalah readme
+
+● Objek yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service adalah readme
 #
 #### Soal 9:
 Cari username dan password ketika login FTP pada localhost!
@@ -135,6 +146,7 @@ _**Penyelesaian:**_
 user: dhana pass: dhana123
 
 ![alt text](/gambar/soal9.1.png)
+
 ![alt text](/gambar/soal9.2.png)
 #
 #### Soal 10:
@@ -146,6 +158,7 @@ _**Penyelesaian:**_
 ● ctrl + f -> ganti tipe pencarian menjadi hex value dengan nilai 25 50 44 46 (pdf signature) -> follow tcp stream -> ganti tipe dari ascii menjadi raw -> save as jarkom.pdf
 
 ![alt text](/gambar/soal10.1.png)
+
 ![alt text](/gambar/soal10.2.png)
 #
 # Capture Filter
@@ -157,6 +170,7 @@ _**Penyelesaian:**_
 port 21
 ```
 ![alt text](/gambar/soal11.1.png)
+
 ![alt text](/gambar/soal11.2.png)
 #
 #### Soal 12:
@@ -167,6 +181,7 @@ _**Penyelesaian:**_
 src port 80
 ```
 ![alt text](/gambar/soal12.1.png)
+
 ![alt text](/gambar/soal12.2.png)
 #
 #### Soal 13:
@@ -177,6 +192,7 @@ _**Penyelesaian:**_
 dst port 443
 ```
 ![alt text](/gambar/soal13.2.png)
+
 ![alt text](/gambar/soal13.2.png)
 #
 #### Soal 14:
@@ -187,6 +203,7 @@ _**Penyelesaian:**_
 src host 192.168.100.139
 ```
 ![alt text](/gambar/soal14.1.png "Hasil Soal 14")
+
 ![alt text](/gambar/soal14.2.png)
 #
 #### Soal 15:
@@ -197,4 +214,5 @@ _**Penyelesaian:**_
 dst host 103.94.190.11
 ```
 ![alt text](/gambar/soal15.1.png)
+
 ![alt text](/gambar/soal15.2.png)
