@@ -24,13 +24,16 @@ Kelompok A11:
   * [Soal 15](#soal-15)
 ----------------------------------------------------------------
 # Display Filter
+
 #### Soal 1:
 Sebutkan webserver yang digunakan pada "testing.mekanis.me"!
+
 _**Penyelesaian:**_
 ```
 http.host == "testing.mekanis.me"
 ```
 ![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal1.1.png)
+
 ● Klik kanan lalu follow tcp stream. Web server yang digunakan adalah nginx
 ![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal1.1.png)
 #
