@@ -153,7 +153,7 @@ _**Penyelesaian:**_
 ```
 src host 192.168.100.139
 ```
-![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal14.1.png)
+![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal14.1.png "Hasil Soal 14")
 ![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal14.2.png)
 #
 #### Soal 15:
