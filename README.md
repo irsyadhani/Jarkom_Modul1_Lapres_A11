@@ -39,19 +39,23 @@ http.host == "testing.mekanis.me"
 #
 #### Soal 2:
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
+
 _**Penyelesaian:**_
 ```
 http contains Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg
 ```
 ![alt text](/gambar/soal2.1.png)
+
 ● Kemudian export object dan save untuk menyimpan gambar
 ![alt text](/gambar/soal2.2.png)
+
 ● Gambar yang tersimpan
 ![alt text](/gambar/soal2.3.png)
 #
 #### Soal 3:
 Cari username dan password ketika login di "ppid.dpr.go.id"!
 Simpan gambar "Tim_Kunjungan_Kerja_BAKN_DPR_RI_ke_Sukabumi141436.jpg"!
+
 _**Penyelesaian:**_
 ```
 http.host == "ppid.dpr.go.id" && http.request.method == POST && http contains login
@@ -61,6 +65,7 @@ http.host == "ppid.dpr.go.id" && http.request.method == POST && http contains lo
 #
 #### Soal 4:
 Temukan paket dari web-web yang menggunakan basic authentication method!
+
 _**Penyelesaian:**_
 ```
 http.authbasic
@@ -72,43 +77,55 @@ Ada 5 paket yang menggunakan basic authentication
 #
 #### Soal 5:
 Ikuti perintah di aku.pengen.pw! Username dan password bisa didapatkan dari file .pcapng!
+
 _**Penyelesaian:**_
+
 ● Open File soal_jarkom_modul1_no1-5
 ```
 http.host contains "aku.pengen.pw"
 ```
 ![alt text](/gambar/soal5.1.png)
+
 ● aku.pengen.pw (user: kakagamtenk pass: hartatahtabermuda)
 ![alt text](/gambar/soal5.2.png)
 ![alt text](/gambar/soal5.3.png)
 #
 #### Soal 6:
 Seseorang menyimpan file zip melalui FTP dengan nama "Answer.zip". Simpan dan Buka file "Open This.pdf" di Answer.zip. Untuk mendapatkan password zipnya, temukan dalam file zipkey.txt (passwordnya adalah isi dari file txt tersebut).
+
 _**Penyelesaian:**_
+
 ● Open File -> Display `filter:ftp-data` -> find -> answer.zip -> Save as RAW -> find -> zipkey.txt -> (hey997400323051)
 ![alt text](/gambar/soal6.png)
 #
 #### Soal 7:
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 1.zip, 2.zip, ..., 500.zip. Salah satunya berisi pdf yang berisi puisi. Simpan dan Buka file pdf tersebut.
 Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
+
 _**Penyelesaian:**_
+
 ● Open File soal_jarkom_modul1_no6,7,9 -> frame contains “Yes.pdf” -> Klik Kanan -> follow -> TCP Stream -> raw -> Save as .zip -> klik Yes.pdf
 ![alt text](/gambar/soal7.png)
 #
 #### Soal 8:
 Cari objek apa saja yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service!
+
 _**Penyelesaian:**_
+
 ● Pertama, display filter `ftp contains “Microsoft”` untuk mendapatkan IP Microsoft FTP Service. IP nya adalah 198.246.117.106
 ![alt text](/gambar/soal8.1.png)
+
 ● Kemudian, display filter `ftp.request.command == RETR && ip.dst == 198.246.117.106`
 ![alt text](/gambar/soal8.2.png)
-Klik kanan -> Follow -> TCP Stream.
+● Klik kanan -> Follow -> TCP Stream.
 ![alt text](/gambar/soal8.2.png)
 objek yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service adalah readme
 #
 #### Soal 9:
 Cari username dan password ketika login FTP pada localhost!
+
 _**Penyelesaian:**_
+
 ● Open File soal_jarkom_modul1_no6,7,9 -> Display Filter `ftp.request.command == USER || ftp.request.command == PASS`
 user: dhana pass: dhana123
 ![alt text](/gambar/soal9.1.png)
@@ -117,7 +134,9 @@ user: dhana pass: dhana123
 #### Soal 10:
 Cari file .pdf di wireshark lalu download dan buka file tersebut!
 clue: "25 50 44 46"
+
 _**Penyelesaian:**_
+
 ● ctrl + f -> ganti tipe pencarian menjadi hex value dengan nilai 25 50 44 46 (pdf signature) -> follow tcp stream -> ganti tipe dari ascii menjadi raw -> save as jarkom.pdf
 ![alt text](/gambar/soal10.1.png)
 ![alt text](/gambar/soal10.2.png)
@@ -125,6 +144,7 @@ _**Penyelesaian:**_
 # Capture Filter
 #### Soal 11:
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
 _**Penyelesaian:**_
 ```
 port 21
@@ -134,6 +154,7 @@ port 21
 #
 #### Soal 12:
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
+
 _**Penyelesaian:**_
 ```
 src port 80
@@ -143,6 +164,7 @@ src port 80
 #
 #### Soal 13:
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
 _**Penyelesaian:**_
 ```
 dst port 443
@@ -152,6 +174,7 @@ dst port 443
 #
 #### Soal 14:
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
 _**Penyelesaian:**_
 ```
 src host 192.168.100.139
@@ -161,6 +184,7 @@ src host 192.168.100.139
 #
 #### Soal 15:
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id!
+
 _**Penyelesaian:**_
 ```
 dst host 103.94.190.11
