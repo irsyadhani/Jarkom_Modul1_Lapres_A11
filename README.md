@@ -73,6 +73,7 @@ http.authbasic
 Ada 5 paket yang menggunakan basic authentication
 ![alt text](/gambar/soal4.1.png)
 ![alt text](/gambar/soal4.2.png)
+
 ● Webserver yang menggunakan basic authentication adalah testing.mekanis.me dan aku.pengen.pw
 #
 #### Soal 5:
@@ -87,6 +88,7 @@ http.host contains "aku.pengen.pw"
 ![alt text](/gambar/soal5.1.png)
 
 ● aku.pengen.pw (user: kakagamtenk pass: hartatahtabermuda)
+
 ![alt text](/gambar/soal5.2.png)
 ![alt text](/gambar/soal5.3.png)
 #
@@ -105,6 +107,7 @@ Your Super Mega Ultra Rare Hint = nama pdf-nya "Yes.pdf"
 _**Penyelesaian:**_
 
 ● Open File soal_jarkom_modul1_no6,7,9 -> frame contains “Yes.pdf” -> Klik Kanan -> follow -> TCP Stream -> raw -> Save as .zip -> klik Yes.pdf
+
 ![alt text](/gambar/soal7.png)
 #
 #### Soal 8:
@@ -116,8 +119,10 @@ _**Penyelesaian:**_
 ![alt text](/gambar/soal8.1.png)
 
 ● Kemudian, display filter `ftp.request.command == RETR && ip.dst == 198.246.117.106`
+
 ![alt text](/gambar/soal8.2.png)
 ● Klik kanan -> Follow -> TCP Stream.
+
 ![alt text](/gambar/soal8.2.png)
 objek yang didownload (RETR) dari koneksi FTP dengan Microsoft FTP Service adalah readme
 #
@@ -128,6 +133,7 @@ _**Penyelesaian:**_
 
 ● Open File soal_jarkom_modul1_no6,7,9 -> Display Filter `ftp.request.command == USER || ftp.request.command == PASS`
 user: dhana pass: dhana123
+
 ![alt text](/gambar/soal9.1.png)
 ![alt text](/gambar/soal9.2.png)
 #
@@ -138,6 +144,7 @@ clue: "25 50 44 46"
 _**Penyelesaian:**_
 
 ● ctrl + f -> ganti tipe pencarian menjadi hex value dengan nilai 25 50 44 46 (pdf signature) -> follow tcp stream -> ganti tipe dari ascii menjadi raw -> save as jarkom.pdf
+
 ![alt text](/gambar/soal10.1.png)
 ![alt text](/gambar/soal10.2.png)
 #
