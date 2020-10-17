@@ -32,7 +32,7 @@ _**Penyelesaian:**_
 ```
 http.host == "testing.mekanis.me"
 ```
-![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal1.1.png)
+![alt text](/gambar/soal1.1.png)
 
 ● Klik kanan lalu follow tcp stream. Web server yang digunakan adalah nginx
 ![alt text](https://github.com/irsyadhani22/Jarkom_Modul1_Lapres_A11/blob/master/gambar/soal1.1.png)
